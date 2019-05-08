@@ -31,3 +31,4 @@ C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\De
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\DebtCalculatorWebApp.dll
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\DebtCalculatorWebApp.pdb
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\DebtCalculatorWebApp.csproj.CopyComplete
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Calculator\Create.g.cshtml.cs
