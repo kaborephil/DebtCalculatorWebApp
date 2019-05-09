@@ -10,5 +10,6 @@ namespace DebtCalculatorWebApp.Models
         public double AutoLoanAmount { get; set; }
         public int AutoLoanTime { get; set; }
         public double AutoLoanApr { get; set; }
+
     }
 }

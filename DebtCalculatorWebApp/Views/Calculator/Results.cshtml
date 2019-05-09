@@ -1,9 +1,80 @@
-﻿
+﻿@model DebtCalculatorWebApp.ViewModels.CalculatorCreateViewModels
 @{
     ViewData["Title"] = "Results";
 }
 
 <div class="container">
-    <h1> Loan Result</h1>
+    <h1 class="font-italic text-center text-danger">  Debts Breakdown : </h1>
+
+    <div class="row">
+
+        <div class="container col-sm-4" style="border: solid 2px;">
+            <table class="table">
+                <thead>Automobile Loan</thead>
+                <tr>
+                    <th> Amount:</th>
+                    <th> Loan Time :</th>
+                    <th> Loan APR :</th>
+                </tr>
+                <tr>
+                    <td>@Model.AutoLoan.AutoLoanAmount.ToString("N")</td>
+                    <td>@Model.AutoLoan.AutoLoanTime Year</td>
+                    <td>@Model.AutoLoan.AutoLoanApr%</td>
+                </tr>
+            </table>
+
+            @{
+            <h3>Your monthly payment is: @Model.MonthyPayment(Model.AutoLoan.AutoLoanAmount, Model.AutoLoan.AutoLoanTime, Model.AutoLoan.AutoLoanApr).ToString("C")</h3>
+            
+             }
+
+        </div>
+
+        <div class="container col-sm-4" style="border: solid 2px;">
+            <table class="table">
+                <thead>Credit Card Loan</thead>
+                <tr>
+                    <th> Amount:</th>
+                    <th> Loan Time :</th>
+                    <th> Loan APR :</th>
+                </tr>
+                <tr>
+                    <td>@Model.CreditCardLoan.CreditCardLoanAmount.ToString("N")</td>
+                    <td>@Model.CreditCardLoan.CreditCardLoanTime Year</td>
+                    <td>@Model.CreditCardLoan.CreditcardLoanApr%</td>
+                </tr>
+            </table>
+
+            @{
+                <h3>Your monthly payment is: @Model.MonthyPayment(Model.CreditCardLoan.CreditCardLoanAmount, Model.CreditCardLoan.CreditCardLoanTime, Model.CreditCardLoan.CreditcardLoanApr).ToString("C")</h3>
+
+            }
+
+        </div>
+
+        <div class="container col-sm-4" style="border: solid 2px;">
+            <table class="table">
+                <thead>Mortgage</thead>
+                <tr>
+                    <th> Amount:</th>
+                    <th> Loan Time :</th>
+                    <th> Loan APR :</th>
+                </tr>
+                <tr>
+                    <td>@Model.Mortgage.MortgageAmount.ToString("N")</td>
+                    <td>@Model.Mortgage.MortgageTime Year</td>
+                    <td>@Model.Mortgage.MortgageApr%</td>
+                </tr>
+            </table>
+
+            @{
+                <h3>Your monthly payment is: @Model.MonthyPayment(Model.Mortgage.MortgageAmount, Model.Mortgage.MortgageTime, Model.Mortgage.MortgageApr).ToString("C")</h3>
+
+            }
+
+        </div>
+
+    </div>
 </div>
+
 
