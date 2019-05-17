@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using DebtCalculatorWebApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using DebtCalculatorWebApp.Models;
 
 namespace DebtCalculatorWebApp
 {
@@ -41,6 +42,9 @@ namespace DebtCalculatorWebApp
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<DebtCalculatorWebAppContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DebtCalculatorWebAppContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

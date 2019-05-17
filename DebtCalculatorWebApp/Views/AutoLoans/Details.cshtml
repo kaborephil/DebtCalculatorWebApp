@@ -1,0 +1,42 @@
+﻿@model DebtCalculatorWebApp.Models.AutoLoan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AutoLoan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoLoanAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoLoanAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoLoanTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoLoanTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoLoanApr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoLoanApr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecordDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AutoLoanId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
