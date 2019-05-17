@@ -33,3 +33,8 @@ C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\De
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\DebtCalculatorWebApp.csproj.CopyComplete
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Calculator\Create.g.cshtml.cs
 C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Calculator\Results.g.cshtml.cs
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\AutoLoans\Create.g.cshtml.cs
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\AutoLoans\Delete.g.cshtml.cs
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\AutoLoans\Details.g.cshtml.cs
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\AutoLoans\Edit.g.cshtml.cs
+C:\Users\kabor\Desktop\Projects\DebtCalculatorWebApp\DebtCalculatorWebApp\obj\Debug\netcoreapp2.1\Razor\Views\AutoLoans\Index.g.cshtml.cs
