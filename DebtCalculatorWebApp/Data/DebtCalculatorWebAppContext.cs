@@ -17,5 +17,7 @@ namespace DebtCalculatorWebApp.Models
         public DbSet<DebtCalculatorWebApp.Models.AutoLoan> AutoLoan { get; set; }
 
         public DbSet<DebtCalculatorWebApp.Models.CreditCardLoan> CreditCardLoan { get; set; }
+
+        public DbSet<DebtCalculatorWebApp.Models.Mortgage> Mortgage { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+﻿@model DebtCalculatorWebApp.Models.Mortgage
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Mortgage</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MortgageAmount" class="control-label"></label>
+                <input asp-for="MortgageAmount" class="form-control" />
+                <span asp-validation-for="MortgageAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MortgageTime" class="control-label"></label>
+                <input asp-for="MortgageTime" class="form-control" />
+                <span asp-validation-for="MortgageTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MortgageApr" class="control-label"></label>
+                <input asp-for="MortgageApr" class="form-control" />
+                <span asp-validation-for="MortgageApr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecordDate" class="control-label"></label>
+                <input asp-for="RecordDate" class="form-control" />
+                <span asp-validation-for="RecordDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

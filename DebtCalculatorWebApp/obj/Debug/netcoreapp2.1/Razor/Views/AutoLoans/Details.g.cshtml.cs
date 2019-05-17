@@ -144,7 +144,7 @@ using DebtCalculatorWebApp.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(934, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e89f07326924b4fb47a899b28f2ab5d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e2c4b8507c477fbe3d271b62803d72", async() => {
                 BeginContext(988, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -179,7 +179,7 @@ using DebtCalculatorWebApp.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1004, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "162d6b5d17a04fb5a58263f4eda364fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e75428c76a26488287ca1932d374e651", async() => {
                 BeginContext(1026, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
