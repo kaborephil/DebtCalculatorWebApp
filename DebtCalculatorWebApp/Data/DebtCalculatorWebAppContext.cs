@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using DebtCalculatorWebApp.Models;
 
 namespace DebtCalculatorWebApp.Models
 {
@@ -14,5 +15,7 @@ namespace DebtCalculatorWebApp.Models
         }
 
         public DbSet<DebtCalculatorWebApp.Models.AutoLoan> AutoLoan { get; set; }
+
+        public DbSet<DebtCalculatorWebApp.Models.CreditCardLoan> CreditCardLoan { get; set; }
     }
 }

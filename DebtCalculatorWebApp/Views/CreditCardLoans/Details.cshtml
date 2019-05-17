@@ -1,0 +1,42 @@
+﻿@model DebtCalculatorWebApp.Models.CreditCardLoan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CreditCardLoan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardLoanAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardLoanAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardLoanTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardLoanTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditcardLoanApr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditcardLoanApr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecordDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecordDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CreditCardLoanId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
