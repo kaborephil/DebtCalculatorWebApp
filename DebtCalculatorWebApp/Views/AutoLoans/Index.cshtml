@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Automobile Loan details</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,16 +13,17 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AutoLoanAmount)
+               Amount
+                
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AutoLoanTime)
+                Time
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AutoLoanApr)
+                APR
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RecordDate)
+                Record Date
             </th>
             <th></th>
         </tr>
@@ -31,20 +32,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.AutoLoanAmount)
+                @item.AutoLoanAmount.ToString("C")
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AutoLoanTime)
+                @item.AutoLoanTime
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AutoLoanApr)
+                 @item.AutoLoanApr %
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RecordDate)
+                @item.RecordDate.ToShortDateString()
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.AutoLoanId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AutoLoanId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.AutoLoanId">Delete</a>
             </td>
         </tr>

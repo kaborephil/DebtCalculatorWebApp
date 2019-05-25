@@ -8,29 +8,29 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>AutoLoan</h4>
+    <h4>Automobile Loan</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.AutoLoanAmount)
+            Amount
         </dt>
         <dd>
             @Html.DisplayFor(model => model.AutoLoanAmount)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.AutoLoanTime)
+           Time
         </dt>
         <dd>
             @Html.DisplayFor(model => model.AutoLoanTime)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.AutoLoanApr)
+            APR
         </dt>
         <dd>
             @Html.DisplayFor(model => model.AutoLoanApr)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.RecordDate)
+            Record Date
         </dt>
         <dd>
             @Html.DisplayFor(model => model.RecordDate)
@@ -39,7 +39,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="AutoLoanId" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <input type="submit" value="Delete" class="btn btn-lg btn-success" /> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>
