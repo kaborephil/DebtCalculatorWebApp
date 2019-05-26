@@ -12,25 +12,25 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.MortgageAmount)
+            Amount
         </dt>
         <dd>
             @Html.DisplayFor(model => model.MortgageAmount)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.MortgageTime)
+           Time
         </dt>
         <dd>
             @Html.DisplayFor(model => model.MortgageTime)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.MortgageApr)
+            APR
         </dt>
         <dd>
             @Html.DisplayFor(model => model.MortgageApr)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.RecordDate)
+            Record Date
         </dt>
         <dd>
             @Html.DisplayFor(model => model.RecordDate)
@@ -39,7 +39,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="MortgageId" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <input type="submit" value="Delete" class="btn btn-lg btn-success" /> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>

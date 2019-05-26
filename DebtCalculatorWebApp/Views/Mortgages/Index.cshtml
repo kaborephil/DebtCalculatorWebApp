@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Mortgage Details</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,16 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.MortgageAmount)
+                Amount
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MortgageTime)
+                Time
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MortgageApr)
+                APR
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RecordDate)
+                Record Date
             </th>
             <th></th>
         </tr>
@@ -31,20 +31,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.MortgageAmount)
+                @item.MortgageAmount.ToString("C")
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MortgageTime)
+                @item.MortgageTime
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MortgageApr)
+                @item.MortgageApr %
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RecordDate)
+                @item.RecordDate.ToShortDateString()
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.MortgageId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MortgageId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.MortgageId">Delete</a>
             </td>
         </tr>
