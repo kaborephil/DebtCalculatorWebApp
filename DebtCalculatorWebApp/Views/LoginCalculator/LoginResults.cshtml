@@ -1,0 +1,62 @@
+﻿@model DebtCalculatorWebAppContext
+
+    @{
+        ViewData["Title"] = "LoginResults";
+    }
+
+    <h2>History</h2>
+
+    <div class="container">
+        <h1 class="font-italic text-center text-danger">  Debts Breakdown : </h1>
+
+        <div class="row">
+
+            <div class="container col-sm-4" style="border: solid 2px;">
+                <table class="table">
+                    <thead>Automobile Loan</thead>
+                    <tr>
+                        <th> Amount:</th>
+                        <th> Loan Time :</th>
+                        <th> Loan APR :</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.AutoLoan.Select(x => x.AutoLoanAmount).Single().ToString("N")</td>
+                        <td>@Model.AutoLoan.Select(x => x.AutoLoanTime).Single()</td>
+                        <td>@Model.AutoLoan.Select(x => x.AutoLoanApr).Single()</td>
+                    </tr>
+                </table>
+                </div>
+
+                <div class="container col-sm-4" style="border: solid 2px;">
+                    <table class="table">
+                        <thead>Credit Card Loan</thead>
+                        <tr>
+                            <th> Amount:</th>
+                            <th> Loan Time :</th>
+                            <th> Loan APR :</th>
+                        </tr>
+                        <tr>
+                            <td>@Model.CreditCardLoan.Select(x => x.CreditCardLoanAmount).Single().ToString("N")</td>
+                            <td>@Model.CreditCardLoan.Select(x => x.CreditCardLoanTime).Single()</td>
+                            <td>@Model.CreditCardLoan.Select(x => x.CreditcardLoanApr).Single()</td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    <div class="container col-sm-4" style="border: solid 2px;">
+                        <table class="table">
+                            <thead>Mortgage</thead>
+                            <tr>
+                                <th> Amount:</th>
+                                <th> Loan Time :</th>
+                                <th> Loan APR :</th>
+                            </tr>
+                            <tr>
+                                <td>@Model.Mortgage.Select(x => x.MortgageAmount).Single().ToString("N")</td>
+                                <td>@Model.Mortgage.Select(x => x.MortgageTime).Single()</td>
+                                <td>@Model.Mortgage.Select(x => x.MortgageApr).Single()</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
