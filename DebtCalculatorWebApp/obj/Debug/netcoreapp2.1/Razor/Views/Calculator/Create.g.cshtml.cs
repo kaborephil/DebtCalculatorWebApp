@@ -70,7 +70,7 @@ using DebtCalculatorWebApp.Models;
             WriteLiteral("\r\n<div class=\"container\">\r\n    <div class=\"container bg-info\">\r\n        ");
             EndContext();
             BeginContext(116, 2291, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0af93f9e39964b138a7356c39f2c2ce9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc30a6d01040444492c63e905f787daa", async() => {
                 BeginContext(184, 2035, true);
                 WriteLiteral(@"
             <div class=""row"">
@@ -110,7 +110,7 @@ using DebtCalculatorWebApp.Models;
                 ");
                 EndContext();
                 BeginContext(2219, 148, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfdbbbb6d10b4529adc2302f27365fd7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4a11f96b03d4286a5a5c81a059020d9", async() => {
                     BeginContext(2309, 49, true);
                     WriteLiteral("\r\n                    CALCULATE\r\n                ");
                     EndContext();

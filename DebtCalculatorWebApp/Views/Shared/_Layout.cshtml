@@ -26,28 +26,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-controller="Calculator" asp-action="Create">Debt Calculator</a></li>
-                    <li><a asp-controller="AutoLoans" asp-action="Create">Automobile Loan</a></li>
-                    <li><a asp-controller="CreditCardLoans" asp-action="Create">Credit Card Loan</a></li>
-                    <li><a asp-controller="Mortgages" asp-action="Create">Mortgage</a></li>
                 </ul>
-                <partial name="_LoginPartial" />
+                
             </div>
         </div>
     </nav>
+    <div style="width:150px; height:600px; border:solid; background-color:darkslategray; float:left;">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a asp-controller="AutoLoans" asp-action="Create">Automobile Loan</a></li>
+            <li class="nav-item"><a asp-controller="CreditCardLoans" asp-action="Create">Credit Card Loan</a></li>
+            <li class="nav-item"><a asp-controller="Mortgages" asp-action="Create">Mortgage</a></li>
+        </ul>
+        <partial name="_LoginPartial" />
+    </div>
 
     <partial name="_CookieConsentPartial" />
-    
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - P.Kabore</p>
+            <p>&copy; 2019 - DebtCalculator Web App</p>
         </footer>
     </div>
 
