@@ -62,7 +62,7 @@ using DebtCalculatorWebApp.Models;
             WriteLiteral("\r\n<div class=\"row\" style=\" padding-left:0%;\">\r\n        ");
             EndContext();
             BeginContext(100, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "baad3ffcd08c4a538d8f01ec88979101", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d9dd34c6bb1143489fb9459724e7486c", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

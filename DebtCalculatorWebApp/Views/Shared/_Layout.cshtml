@@ -37,11 +37,12 @@
             </div>
         </div>
     </nav>
-    <div style="width:150px; height:600px; border:solid; background-color:darkslategray; float:left;">
+    <div style="width:170px; height:600px; border:solid; background-color:darkslategray; float:left;">
         <ul class="nav flex-column">
             <li class="nav-item"><a asp-controller="AutoLoans" asp-action="Create">Automobile Loan</a></li>
             <li class="nav-item"><a asp-controller="CreditCardLoans" asp-action="Create">Credit Card Loan</a></li>
             <li class="nav-item"><a asp-controller="Mortgages" asp-action="Create">Mortgage</a></li>
+            <li class="nav-item"><a asp-controller="LoginCalculator" asp-action="LoginResults">Loan History</a></li>
         </ul>
         <partial name="_LoginPartial" />
     </div>

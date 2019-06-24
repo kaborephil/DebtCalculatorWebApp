@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DebtCalculatorWebApp.Models;
 using DebtCalculatorWebApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DebtCalculatorWebApp.Controllers

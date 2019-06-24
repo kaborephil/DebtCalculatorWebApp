@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DebtCalculatorWebApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DebtCalculatorWebApp.Controllers
 {
+    [Authorize]
     public class MortgagesController : Controller
     {
         private readonly DebtCalculatorWebAppContext _context;
