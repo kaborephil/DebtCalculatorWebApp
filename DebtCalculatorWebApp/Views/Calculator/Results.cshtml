@@ -3,7 +3,7 @@
     ViewData["Title"] = "Results";
 }
 
-<div class="container">
+<div class="container" style="width:100%; height:100%; border:solid 10px;">
     <h1 class="font-italic text-center text-danger">  Debts Breakdown : </h1>
 
     <div class="row">
@@ -25,7 +25,7 @@
 
             @{
             <h3>Your monthly payment is: @Model.MonthyPayment(Model.AutoLoan.AutoLoanAmount, Model.AutoLoan.AutoLoanTime, Model.AutoLoan.AutoLoanApr).ToString("C")</h3>
-            
+
              }
 
         </div>
@@ -74,6 +74,17 @@
 
         </div>
 
+    </div>
+    <div class=" container">
+               
+                    @{ 
+                        var TotalPay =
+                        @Model.MonthyPayment(Model.AutoLoan.AutoLoanAmount, Model.AutoLoan.AutoLoanTime, Model.AutoLoan.AutoLoanApr) +
+                        @Model.MonthyPayment(Model.CreditCardLoan.CreditCardLoanAmount, Model.CreditCardLoan.CreditCardLoanTime, Model.CreditCardLoan.CreditcardLoanApr) +
+                        @Model.MonthyPayment(Model.Mortgage.MortgageAmount, Model.Mortgage.MortgageTime, Model.Mortgage.MortgageApr);
+
+                <h1>Loan Total Payment: @TotalPay.ToString("C")</h1>
+                        }
     </div>
 </div>
 
