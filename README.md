@@ -1,11 +1,10 @@
 # DEBT CALULATOR WEB APPLICATION WITH LOGIN
 
-##	THIS PROJECT IS STILL IN PROGRESS...
-
-## USER INPUT FORM
-
-![](Images/UserInputForm.gif)
 
 ## USER OUTPUT FORM
 
-![](Images/UserOutputForm.gif)
+![](Images/UserOutput.gif)
+
+## USER INPUT FORM
+
+![](Images/UserInput.gif)
